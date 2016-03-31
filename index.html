@@ -218,6 +218,15 @@
 
     
     
+      
+      
+        
+        
+        
+      
+
+      
+    
 
     
       
@@ -299,8 +308,22 @@
 
       
         
-          <p>前些天本来是打算复习为建行北开的面试做准备，可是无意中发现了Hexo，就一直沉迷于研究搭建一个属于自己的个人博客。一直都很羡慕有坚持整理并记录自己掌握知识习惯的同学，希望自己今后也可以把掌握的东西、随笔心得甚至平常生活在这个博客里记录下来。加油，三爷！</p>
-<p>该博客是通过Hexo搭建，部署在Github Pages上，并且整个托管在Github。之前也没接触过版本管理，趁这次机会一起学习了Git。</p>
+          <p>该博客是通过Hexo搭建，部署在Github Pages上，并托管在Github。之前没接触过版本管理，趁这次机会一起学习了Git。</p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a><a href="https://hexo.io/">Hexo</a></h2><blockquote>
+<p>Hexo实际上是一个静态博客的框架。其搭建简单快速，仅需要几条命令，轻量级，并且功能比较全也比较优雅简洁，提供的主题也比较丰富。</p>
+</blockquote>
+<h3 id="u5B89_u88C5_u914D_u7F6E"><a href="#u5B89_u88C5_u914D_u7F6E" class="headerlink" title="安装配置"></a>安装配置</h3><pre><code class="bash">$ npm install hexo-cli -g
+$ hexo init [blog] <span class="comment">#不指定目录则默认当前CWD</span>
+$ [<span class="built_in">cd</span> blog]
+$ npm install
+$ hexo server <span class="comment">#本地测试，localhost:4000</span>
+</code></pre>
+<ol>
+<li>安装Hexo前需要先安装<a href="https://nodejs.org/en/">Node.js</a>和<a href="http://git-scm.com/">Git</a></li>
+<li>在命令行输入上方命令进行安装</li>
+<li>Hexo博客配置，修改博客目录下<code>_config.yml</code>（全站配置）及主题目录<code>/themes</code>下<code>_config.yml</code>（主题相关配置）</li>
+<li><a href="https://github.com/hexojs/hexo/wiki/Themes">Hexo博客主题</a>更换，将整个主题目录拷贝到你的Hexo博客目录下<code>/themes</code>中，修改全站配置<code>_config.yml</code>中字段：<br><code>theme: your-theme-name</code></li>
+</ol>
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/12/20/construction-of-fan-s-blog/#more" rel="contents">
               阅读全文 &raquo;
@@ -542,8 +565,8 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
-  <span itemprop="copyrightYear">2015</span>
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
     <i class="icon-next-heart fa fa-heart"></i>
   </span>
